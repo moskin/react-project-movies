@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+
+.main {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 14% 70% 14%;
+    grid-gap: 1rem;
+    overflow-wrap: break-word;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 1rem;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.clearRequestMessage {
+    color: #f2f2f2;
+    margin-left: 40%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.logo {
+    height: 6vh;
+}
+.logo-footer {
+    margin: auto;
+}
+
+.navbar-expand {
+    justify-content: space-between !important;
+}
+
+@media only screen and (max-width: 1566px) {
+    .main{
+        display: block;
+    }
+    .navbar {
+        /*display: block !important;*/
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .form-inline {
+        margin-bottom: 20px;
+    }
+    .logo {
+        margin-bottom: 20px;
+        order: -1;
+    }
+    .pagination {
+
+    }
+    .list-group {
+        margin-bottom: 15px !important;
+    }
+    .grid {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 606px) {
+    .navbar {
+        /*display: block !important;*/
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .logo {
+        margin-bottom: 20px;
+        order: -1;
+    }
+    .card {
+        margin-left: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 470px) {
+    .navbar {
+        /*display: block !important;*/
+        flex-direction: column !important;
+        /*align-items: center;*/
+    }
+    .form-inline {
+        margin-bottom: 20px;
+    }
+    .logo {
+        margin-bottom: 20px;
+        width: 18rem;
+        order: -1;
+    }
+    .btn {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .card {
+        margin-left: 0;
+    }
+}
+
+
+@media only screen and (max-width: 380px) {
+    .navbar {
+        flex-direction: column !important;
+    }
+    .logo {
+        order: -1;
+    }
+    .card {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .navbar {
+        flex-direction: column !important;
+    }
+    .logo {
+        order: -1;
+    }
+    .card {
+        margin-top: 10px;
+    }
+}

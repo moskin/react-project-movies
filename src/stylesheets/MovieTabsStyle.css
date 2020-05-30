@@ -1,0 +1,8 @@
+.navigation-item{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.active {
+    color: #17a2b8;
+}
+

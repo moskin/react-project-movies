@@ -1,0 +1,31 @@
+.pagination{
+    /*background-color: #2F3140;*/
+    margin: 10px 0px;
+}
+
+.activeLi {
+    background-color: #bec8ce;
+}
+.activeLink{
+    text-decoration:none;
+    color: #070707;
+    background-color: #bec8ce;
+}
+.link{
+    color: #f2f2f2;
+}
+/*.link:hover{*/
+/*    text-decoration:none;*/
+/*    color: #f2f2f2;*/
+/*}*/
+.item{
+    text-decoration:none;
+    border: 1px solid rgba(242, 242, 242, 0.39);
+    border-radius: 0.25rem;
+    padding: 5.25px 13px;
+    color: #f2f2f2;
+}
+
+a {
+    color: #17a2b8 !important;
+}
