@@ -105,14 +105,12 @@ class MovieList extends React.Component {
         }
     };
 
-
-
-
-
-
-
-
-
+    handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            this.searchMovies(this.state.search)
+            console.log('do validate')
+        }
+    }
 
     render() {
 
@@ -123,18 +121,21 @@ class MovieList extends React.Component {
             <div>
                 <Navbar bg="dark" variant="dark">
 
-                    <Form inline>
-                        <FormControl type="text"
-                               placeholder="Type here..."
-                               className="mr-sm-2"
-                               onChange={this.handleInputChange} value={this.state.search}
-                               style={{backgroundColor: 'inherit', color: 'white'}}
+                    {/*<Form inline>*/}
+                    <div className='formSearch'>
+                        <FormControl onKeyDown={this.handleKeyDown}
+                                     type="text"
+                                     placeholder="Type here..."
+                                     className="mr-sm-2"
+                                     onChange={this.handleInputChange} value={this.state.search}
+                                     style={{backgroundColor: 'inherit', color: 'white'}}
                         />
                         <Button
                             variant="outline-info"
                             onClick={this.searchMovies}
                         >Search</Button>
-                    </Form>
+                    </div>
+                    {/*</Form>*/}
                     <img src={require('../momo/vector/default-monochrome-white2.svg')} className='logo'/>
                     <MoviesPagination
                             currentPage={this.state.currentPage}

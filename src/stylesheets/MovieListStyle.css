@@ -47,6 +47,10 @@
     justify-content: space-between !important;
 }
 
+.formSearch {
+    display: flex;
+}
+
 @media only screen and (max-width: 1566px) {
     .main{
         display: block;
@@ -105,7 +109,7 @@
         order: -1;
     }
     .btn {
-        margin-top: 10px;
+        margin-left: 5px;
     }
 }
 
